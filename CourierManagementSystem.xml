@@ -1,0 +1,201 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="CourierManagementSystem" type="CourierManagementData">
+		<xs:key name="CourierCompanyId">
+			<xs:selector xpath="CourierCompanies"/>
+			<xs:field xpath="id"/>
+		</xs:key>
+		<xs:key name="CourierId">
+			<xs:selector xpath="Couriers"/>
+			<xs:field xpath="id"/>
+		</xs:key>
+		<xs:key name="AdminId">
+			<xs:selector xpath="Admin"/>
+			<xs:field xpath="id"/>
+		</xs:key>
+		<xs:key name="UsersId">
+			<xs:selector xpath="Users"/>
+			<xs:field xpath="id"/>
+		</xs:key>
+		<xs:key name="CourierCompanyUsersId">
+			<xs:selector xpath="CourierCompanyUsers"/>
+			<xs:field xpath="id"/>
+		</xs:key>
+		<xs:key name="CustomerId">
+			<xs:selector xpath="Customers"/>
+			<xs:field xpath="id"/>
+		</xs:key>
+		<xs:key name="ClientId">
+			<xs:selector xpath="Client"/>
+			<xs:field xpath="id"/>
+		</xs:key>
+		<xs:key name="ParcelId">
+			<xs:selector xpath="Parcels"/>
+			<xs:field xpath="id"/>
+		</xs:key>
+		<xs:key name="ClientReceivesParcelsId">
+			<xs:selector xpath="ClientReceivesParcels"/>
+			<xs:field xpath="id"/>
+		</xs:key>
+		<xs:key name="ParcelsTrackedByCustomersId">
+			<xs:selector xpath="ParcelsTrackedByCustomers"/>
+			<xs:field xpath="id"/>
+		</xs:key>
+		
+		<xs:keyref name="CourierFKey" refer="CourierCompanyId">
+			<xs:selector xpath="Couriers"/>
+			<xs:field xpath="CourierCompanyId1"/>
+		</xs:keyref>
+		<xs:keyref name="UsersFKey" refer="UsersId">
+			<xs:selector xpath="Users"/>
+			<xs:field xpath="UsersId"/>
+		</xs:keyref>
+		<xs:keyref name="CourierCompanyUsersFKey1" refer="CourierCompanyId">
+			<xs:selector xpath="CourierCompanyUsers"/>
+			<xs:field xpath="CourierCompanyId"/>
+		</xs:keyref>
+		<xs:keyref name="CourierCompanyUsersFKey2" refer="UsersId">
+			<xs:selector xpath="CourierCompanyUsers"/>
+			<xs:field xpath="UsersId"/>
+		</xs:keyref>
+		<xs:keyref name="ParcelsFKey" refer="AdminId">
+			<xs:selector xpath="Parcels"/>
+			<xs:field xpath="AdminId"/>
+		</xs:keyref>
+		<xs:keyref name="ClientReceivesParcelsFKey1" refer="ClientId">
+			<xs:selector xpath="ClientReceivesParcels"/>
+			<xs:field xpath="ClientId"/>
+		</xs:keyref>
+		<xs:keyref name="ClientReceivesParcelsFKey2" refer="ParcelId">
+			<xs:selector xpath="ClientReceivesParcels"/>
+			<xs:field xpath="ParcelId"/>
+		</xs:keyref>
+		<xs:keyref name="ParcelsTrackedByCustomersFKey1" refer="CustomerId">
+			<xs:selector xpath="ParcelsTrackedByCustomers"/>
+			<xs:field xpath="CustomerId"/>
+		</xs:keyref>
+		<xs:keyref name="ParcelsTrackedByCustomersFKey2" refer="ParcelId">
+			<xs:selector xpath="ParcelsTrackedByCustomers"/>
+			<xs:field xpath="ParcelId"/>
+		</xs:keyref>
+	</xs:element>
+	<xs:complexType name="CourierManagementData">
+		<xs:sequence>
+			<xs:element ref="CourierCompanies" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="Couriers" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="Admin" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="Users" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="CourierCompanyUsers" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="Customers" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="Client" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="Parcels" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="ClientReceivesParcels" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="ParcelsTrackedByCustomers" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="CourierCompanies">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer"/>
+				<xs:element name="CourierCompanyName" type="xs:string"/>
+				<xs:element name="Location" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Couriers">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer"/>
+				<xs:element name="CourierName" type="xs:string"/>
+				<xs:element name="BadgeNumber" type="xs:integer"/>
+				<xs:element name="PackagesDeliveredDaily" type="xs:integer"/>
+				<xs:element name="CourierCompanyId1" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Admin">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer"/>
+				<xs:element name="AdminName" type="xs:string"/>
+				<xs:element name="AdminUsername" type="xs:string"/>
+				<xs:element name="AdminPassword" type="xs:string"/>
+				<xs:element name="AdminPhoneNumber" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Users">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer"/>
+				<xs:element name="Name" type="xs:string"/>
+				<xs:element name="Username" type="xs:string"/>
+				<xs:element name="Password" type="xs:string"/>
+				<xs:element name="PhoneNumber" type="xs:integer"/>
+				<xs:element name="Email" type="xs:string"/>
+				<xs:element name="AdminId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CourierCompanyUsers">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer"/>
+				<xs:element name="CourierCompanyId" type="xs:integer"/>
+				<xs:element name="UserId" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Customers">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer"/>
+				<xs:element name="Name" type="xs:string"/>
+				<xs:element name="PhoneNumber" type="xs:integer"/>
+				<xs:element name="Email" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Client">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer"/>
+				<xs:element name="Name" type="xs:string"/>
+				<xs:element name="Address" type="xs:string"/>
+				<xs:element name="PhoneNumber" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Parcels">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer"/>
+				<xs:element name="TrackingNumber" type="xs:integer"/>
+				<xs:element name="DeliveryType" type="xs:string"/>
+				<xs:element name="DeliveryFee" type="xs:integer"/>
+				<xs:element name="DeliveryDate" type="xs:date"/>
+				<xs:element name="SendersName" type="xs:string"/>
+				<xs:element name="SendersAddress" type="xs:string"/>
+				<xs:element name="AdminId" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ClientReceivesParcels">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer"/>
+				<xs:element name="ParcelId" type="xs:integer"/>
+				<xs:element name="ClientId" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ParcelsTrackedByCustomers">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:integer"/>
+				<xs:element name="ParcelId" type="xs:integer"/>
+				<xs:element name="CustomerId" type="xs:integer"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

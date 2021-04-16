@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CourierManagementSystem>
+	<CourierCompanies>
+		<id>1</id>
+		<CourierCompanyName>FedEx</CourierCompanyName>
+		<Location> Mississauga </Location>
+	</CourierCompanies>
+	<CourierCompanies>
+		<id>2</id>
+		<CourierCompanyName>Canada Post</CourierCompanyName>
+		<Location>Oakville</Location>
+	</CourierCompanies>
+	<CourierCompanies>
+		<id>3</id>
+		<CourierCompanyName>UPS</CourierCompanyName>
+		<Location>Concord</Location>
+	</CourierCompanies>
+	<CourierCompanies>
+		<id>4</id>
+		<CourierCompanyName>DeliveryZone</CourierCompanyName>
+		<Location>Toronto</Location>
+	</CourierCompanies>
+	<CourierCompanies>
+		<id>5</id>
+		<CourierCompanyName>iDelivery</CourierCompanyName>
+		<Location>Vancouver</Location>
+	</CourierCompanies>
+	<CourierCompanies>
+		<id>6</id>
+		<CourierCompanyName>DeliverIt</CourierCompanyName>
+		<Location>Calgary</Location>
+	</CourierCompanies>
+	<CourierCompanies>
+		<id>7</id>
+		<CourierCompanyName>Postack</CourierCompanyName>
+		<Location>Montreal</Location>
+	</CourierCompanies>
+	<CourierCompanies>
+		<id>8</id>
+		<CourierCompanyName>Exportic</CourierCompanyName>
+		<Location>New York</Location>
+	</CourierCompanies>
+	<CourierCompanies>
+		<id>9</id>
+		<CourierCompanyName>PackageCommerce</CourierCompanyName>
+		<Location>San Francisco</Location>
+	</CourierCompanies>
+	<CourierCompanies>
+		<id>10</id>
+		<CourierCompanyName>UpShipment</CourierCompanyName>
+		<Location>Houstan</Location>
+	</CourierCompanies>
+	<Couriers>
+		<id>1</id>
+		<CourierName>Zakir Dixon</CourierName>
+		<BadgeNumber>395718</BadgeNumber>
+		<PackagesDeliveredDaily>285</PackagesDeliveredDaily>
+		<CourierCompanyId1>1</CourierCompanyId1>
+	</Couriers>
+	<Couriers>
+		<id>2</id>
+		<CourierName>Olivier Powell</CourierName>
+		<BadgeNumber>215389</BadgeNumber>
+		<PackagesDeliveredDaily>793</PackagesDeliveredDaily>
+		<CourierCompanyId1>2</CourierCompanyId1>
+	</Couriers>
+	<Couriers>
+		<id>3</id>
+		<CourierName>Courtine Anthony</CourierName>
+		<BadgeNumber>516429</BadgeNumber>
+		<PackagesDeliveredDaily>934</PackagesDeliveredDaily>
+		<CourierCompanyId1>3</CourierCompanyId1>
+	</Couriers>
+	<Couriers>
+		<id>4</id>
+		<CourierName>Israr Bond</CourierName>
+		<BadgeNumber>167584</BadgeNumber>
+		<PackagesDeliveredDaily>738</PackagesDeliveredDaily>
+		<CourierCompanyId1>1</CourierCompanyId1>
+	</Couriers>
+	<Couriers>
+		<id>5</id>
+		<CourierName>Colton Wheeler</CourierName>
+		<BadgeNumber>175284</BadgeNumber>
+		<PackagesDeliveredDaily>596</PackagesDeliveredDaily>
+		<CourierCompanyId1>2</CourierCompanyId1>
+	</Couriers>
+	<Couriers>
+		<id>6</id>
+		<CourierName>Maisey Bright</CourierName>
+		<BadgeNumber>796541</BadgeNumber>
+		<PackagesDeliveredDaily>854</PackagesDeliveredDaily>
+		<CourierCompanyId1>3</CourierCompanyId1>
+	</Couriers>
+	<Couriers>
+		<id>7</id>
+		<CourierName>Jolene Bain</CourierName>
+		<BadgeNumber>371586</BadgeNumber>
+		<PackagesDeliveredDaily>745</PackagesDeliveredDaily>
+		<CourierCompanyId1>4</CourierCompanyId1>
+	</Couriers>
+	<Couriers>
+		<id>8</id>
+		<CourierName>Leslie Sierra</CourierName>
+		<BadgeNumber>798215</BadgeNumber>
+		<PackagesDeliveredDaily>193</PackagesDeliveredDaily>
+		<CourierCompanyId1>1</CourierCompanyId1>
+	</Couriers>
+	<Couriers>
+		<id>9</id>
+		<CourierName>Maddox Hamilton</CourierName>
+		<BadgeNumber>241798</BadgeNumber>
+		<PackagesDeliveredDaily>834</PackagesDeliveredDaily>
+		<CourierCompanyId1>2</CourierCompanyId1>
+	</Couriers>
+	<Couriers>
+		<id>10</id>
+		<CourierName>Maddox Hamilton</CourierName>
+		<BadgeNumber>472613</BadgeNumber>
+		<PackagesDeliveredDaily>893</PackagesDeliveredDaily>
+		<CourierCompanyId1>1</CourierCompanyId1>
+	</Couriers>
+	<Admin>
+		<id>1</id>
+		<AdminName>Robert Latymer</AdminName>
+		<AdminUsername>Robert1</AdminUsername>
+		<AdminPassword>Latymer9</AdminPassword>
+		<AdminPhoneNumber>6828281090</AdminPhoneNumber>
+	</Admin>
+	<Admin>
+		<id>2</id>
+		<AdminName>Rosanna Langlais</AdminName>
+		<AdminUsername>Rosanna2</AdminUsername>
+		<AdminPassword>Langlais8</AdminPassword>
+		<AdminPhoneNumber>7185312273</AdminPhoneNumber>
+	</Admin>
+	<Admin>
+		<id>3</id>
+		<AdminName>Randolph Seventh</AdminName>
+		<AdminUsername>Randolph3</AdminUsername>
+		<AdminPassword>Seventh7</AdminPassword>
+		<AdminPhoneNumber>8918390583</AdminPhoneNumber>
+	</Admin>
+	<Admin>
+		<id>4</id>
+		<AdminName>Ronda Robson</AdminName>
+		<AdminUsername>Ronda4</AdminUsername>
+		<AdminPassword>Robson6</AdminPassword>
+		<AdminPhoneNumber>6939968412</AdminPhoneNumber>
+	</Admin>
+	<Admin>
+		<id>5</id>
+		<AdminName>Andrew Cope</AdminName>
+		<AdminUsername>Andrew5</AdminUsername>
+		<AdminPassword>Cope5</AdminPassword>
+		<AdminPhoneNumber>2564206464</AdminPhoneNumber>
+	</Admin>
+	<Admin>
+		<id>6</id>
+		<AdminName>Max Reginald</AdminName>
+		<AdminUsername>Max6</AdminUsername>
+		<AdminPassword>Reginald4</AdminPassword>
+		<AdminPhoneNumber>3937118024</AdminPhoneNumber>
+	</Admin>
+	<Admin>
+		<id>7</id>
+		<AdminName>Andie Anson</AdminName>
+		<AdminUsername>Andie7</AdminUsername>
+		<AdminPassword>Anson3</AdminPassword>
+		<AdminPhoneNumber>7065345929</AdminPhoneNumber>
+	</Admin>
+	<Admin>
+		<id>8</id>
+		<AdminName>Marla Maudson</AdminName>
+		<AdminUsername>Marla8</AdminUsername>
+		<AdminPassword>Maudson2</AdminPassword>
+		<AdminPhoneNumber>6297174958</AdminPhoneNumber>
+	</Admin>
+	<Admin>
+		<id>9</id>
+		<AdminName>Harriet Northern</AdminName>
+		<AdminUsername>Harriet9</AdminUsername>
+		<AdminPassword>Northern1</AdminPassword>
+		<AdminPhoneNumber>3223902397</AdminPhoneNumber>
+	</Admin>
+	<Admin>
+		<id>10</id>
+		<AdminName>Shawn Demon</AdminName>
+		<AdminUsername>Shawn1</AdminUsername>
+		<AdminPassword>Demon1</AdminPassword>
+		<AdminPhoneNumber>2843420518</AdminPhoneNumber>
+	</Admin>
+	<Users>
+		<id>1</id>
+		<Name>Kim Holland</Name>
+		<Username>Kim1</Username>
+		<Password>Holland1</Password>
+		<PhoneNumber>9976494763</PhoneNumber>
+		<Email>kim@gmail.com</Email>
+		<AdminId>1</AdminId>
+	</Users>
+	<Users>
+		<id>2</id>
+		<Name>Alba Vu</Name>
+		<Username>Alba1</Username>
+		<Password>Vu2</Password>
+		<PhoneNumber>2848277889</PhoneNumber>
+		<Email>alba@gmail.com</Email>
+		<AdminId>2</AdminId>
+	</Users>
+	<Users>
+		<id>3</id>
+		<Name>Brandon Drew</Name>
+		<Username>Brandon1</Username>
+		<Password>Drew3</Password>
+		<PhoneNumber>7349091311</PhoneNumber>
+		<Email>brandon@gmail.com</Email>
+		<AdminId>3</AdminId>
+	</Users>
+	<Users>
+		<id>4</id>
+		<Name>Sami Murillo</Name>
+		<Username>Sami1</Username>
+		<Password>Murillo4</Password>
+		<PhoneNumber>9963295617</PhoneNumber>
+		<Email>sami@gmail.com</Email>
+		<AdminId>4</AdminId>
+	</Users>
+	<Users>
+		<id>5</id>
+		<Name>Adnan Dunkley</Name>
+		<Username>Adnan1</Username>
+		<Password>Dunkley5</Password>
+		<PhoneNumber>8206682756</PhoneNumber>
+		<Email>adnan@gmail.com</Email>
+		<AdminId>5</AdminId>
+	</Users>
+	<CourierCompanyUsers>
+		<id>1</id>
+		<CourierCompanyId>1</CourierCompanyId>
+		<UserId>1</UserId>
+	</CourierCompanyUsers>
+	<CourierCompanyUsers>
+		<id>2</id>
+		<CourierCompanyId>1</CourierCompanyId>
+		<UserId>2</UserId>
+	</CourierCompanyUsers>
+	<CourierCompanyUsers>
+		<id>3</id>
+		<CourierCompanyId>2</CourierCompanyId>
+		<UserId>3</UserId>
+	</CourierCompanyUsers>
+	<CourierCompanyUsers>
+		<id>4</id>
+		<CourierCompanyId>2</CourierCompanyId>
+		<UserId>4</UserId>
+	</CourierCompanyUsers>
+	<CourierCompanyUsers>
+		<id>5</id>
+		<CourierCompanyId>3</CourierCompanyId>
+		<UserId>5</UserId>
+	</CourierCompanyUsers>
+	<Customers>
+		<id>1</id>
+		<Name>Gemma Sears</Name>
+		<PhoneNumber>4273577698</PhoneNumber>
+		<Email>gemma@gmail.com</Email>
+	</Customers>
+	<Customers>
+		<id>2</id>
+		<Name>Roxie Glass</Name>
+		<PhoneNumber>6869877768</PhoneNumber>
+		<Email>roxie@gmail.com</Email>
+	</Customers>
+	<Customers>
+		<id>3</id>
+		<Name>Debra Storey</Name>
+		<PhoneNumber>8159170695</PhoneNumber>
+		<Email>debra@gmail.com</Email>
+	</Customers>
+	<Customers>
+		<id>4</id>
+		<Name>Cheyenne Gilliam</Name>
+		<PhoneNumber>7703523380</PhoneNumber>
+		<Email>cheyenne@gmail.com</Email>
+	</Customers>
+	<Customers>
+		<id>5</id>
+		<Name>Rosie Daniel</Name>
+		<PhoneNumber>6685917676</PhoneNumber>
+		<Email>rosie@gmail.com</Email>
+	</Customers>
+	<Client>
+		<id>1</id>
+		<Name>Cadi Mendoza</Name>
+		<Address>4970  Robson St</Address>
+		<PhoneNumber>8196664166</PhoneNumber>
+	</Client>
+	<Client>
+		<id>2</id>
+		<Name>Hallam Salter</Name>
+		<Address>2871  Parkdale Avenue</Address>
+		<PhoneNumber>8676697399</PhoneNumber>
+	</Client>
+	<Client>
+		<id>3</id>
+		<Name>William Peck</Name>
+		<Address>3493  Birkett Lane</Address>
+		<PhoneNumber>8676697311</PhoneNumber>
+	</Client>
+	<Client>
+		<id>4</id>
+		<Name>Caydem Weir</Name>
+		<Address>3444  Birkett Lane</Address>
+		<PhoneNumber>7782302126</PhoneNumber>
+	</Client>
+	<Client>
+		<id>5</id>
+		<Name>Kenneth Chester</Name>
+		<Address>3733  James Street</Address>
+		<PhoneNumber>7782302121</PhoneNumber>
+	</Client>
+	<Parcels>
+		<id>1</id>
+		<TrackingNumber>2505036619</TrackingNumber>
+		<DeliveryType>Express</DeliveryType>
+		<DeliveryFee>10</DeliveryFee>
+		<DeliveryDate>2021-04-01</DeliveryDate>
+		<SendersName>Jose Cooper</SendersName>
+		<SendersAddress>4582  Coldstream Avenue</SendersAddress>
+		<AdminId>1</AdminId>
+	</Parcels>
+	<Parcels>
+		<id>2</id>
+		<TrackingNumber>3064327632</TrackingNumber>
+		<DeliveryType>Regular</DeliveryType>
+		<DeliveryFee>5</DeliveryFee>
+		<DeliveryDate>2021-07-01</DeliveryDate>
+		<SendersName>Rosetta Gomez</SendersName>
+		<SendersAddress>3401  St. John Street</SendersAddress>
+		<AdminId>2</AdminId>
+	</Parcels>
+	<Parcels>
+		<id>3</id>
+		<TrackingNumber>2506473612</TrackingNumber>
+		<DeliveryType>Express</DeliveryType>
+		<DeliveryFee>10</DeliveryFee>
+		<DeliveryDate>2021-04-02</DeliveryDate>
+		<SendersName>Ethel Hoffman</SendersName>
+		<SendersAddress>4023  Ganges Road</SendersAddress>
+		<AdminId>3</AdminId>
+	</Parcels>
+	<Parcels>
+		<id>4</id>
+		<TrackingNumber>2042930392</TrackingNumber>
+		<DeliveryType>Express</DeliveryType>
+		<DeliveryFee>10</DeliveryFee>
+		<DeliveryDate>2021-02-01</DeliveryDate>
+		<SendersName>Gertrude Lau</SendersName>
+		<SendersAddress>2144  St Marys Rd</SendersAddress>
+		<AdminId>4</AdminId>
+	</Parcels>
+	<Parcels>
+		<id>5</id>
+		<TrackingNumber>7804385365</TrackingNumber>
+		<DeliveryType>Express</DeliveryType>
+		<DeliveryFee>5</DeliveryFee>
+		<DeliveryDate>2021-01-01</DeliveryDate>
+		<SendersName>Lakisha Anderson</SendersName>
+		<SendersAddress>2728  Gateway Blvd</SendersAddress>
+		<AdminId>5</AdminId>
+	</Parcels>
+	<ClientReceivesParcels>
+		<id>1</id>
+		<ParcelId>2</ParcelId>
+		<ClientId>1</ClientId>
+	</ClientReceivesParcels>
+	<ClientReceivesParcels>
+		<id>2</id>
+		<ParcelId>1</ParcelId>
+		<ClientId>2</ClientId>
+	</ClientReceivesParcels>
+	<ClientReceivesParcels>
+		<id>3</id>
+		<ParcelId>4</ParcelId>
+		<ClientId>3</ClientId>
+	</ClientReceivesParcels>
+	<ClientReceivesParcels>
+		<id>4</id>
+		<ParcelId>3</ParcelId>
+		<ClientId>4</ClientId>
+	</ClientReceivesParcels>
+	<ClientReceivesParcels>
+		<id>5</id>
+		<ParcelId>5</ParcelId>
+		<ClientId>5</ClientId>
+	</ClientReceivesParcels>
+	<ParcelsTrackedByCustomers>
+		<id>1</id>
+		<ParcelId>2</ParcelId>
+		<CustomerId>1</CustomerId>
+	</ParcelsTrackedByCustomers>
+	<ParcelsTrackedByCustomers>
+		<id>2</id>
+		<ParcelId>1</ParcelId>
+		<CustomerId>2</CustomerId>
+	</ParcelsTrackedByCustomers>
+	<ParcelsTrackedByCustomers>
+		<id>3</id>
+		<ParcelId>4</ParcelId>
+		<CustomerId>3</CustomerId>
+	</ParcelsTrackedByCustomers>
+	<ParcelsTrackedByCustomers>
+		<id>4</id>
+		<ParcelId>3</ParcelId>
+		<CustomerId>4</CustomerId>
+	</ParcelsTrackedByCustomers>
+	<ParcelsTrackedByCustomers>
+		<id>5</id>
+		<ParcelId>5</ParcelId>
+		<CustomerId>5</CustomerId>
+	</ParcelsTrackedByCustomers>
+</CourierManagementSystem>
